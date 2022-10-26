@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+        <div class="header">
+            <div>
+                <button class="button" id="score_check">Past Highscores</button>
+            </div>
+            <div>
+                <p id="timer"> Time Remaining: 60 seconds</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <section class="intro_page" id="intro_page">
+                <div id="intro">
+                    <h1>
+                        Howdy! This is the Coding Camp Quiz Challenge, good luck!
+                    </h1>
+                    <p id="instruction">
+                        Answer each of the (5) questions in the alotted amount of time. You will be penalized for incorrect answers, so watch out for traps and trick questions, they'll eat your score and time limit by (10) seconds!
+                    </p>
+                    <button class="button" id="begin_button">Begin Quiz</button>
+                </div>
+            </section>
+
+            <section class="question_page" id="question_page">
+                <div>
+                    <div>
+                        <h2 id = "ask_question">Ask the question</h2>
+                        <ul>
+                            <li><button class ="choices button" id="choice_btn1" value="1">Answer1</button></li>
+                            <li><button class ="choices button" id="choice_btn2" value="2">Answer2</button></li>
+                            <li><button class ="choices button" id="choice_btn3" value="3">Answer3</button></li>
+                            <li><button class ="choices button" id="choice_btn4" value="4">Answer4</button></li>
+                        </ul>
+                    <div>
+
+                    <div id="check_line">
+                        <p>Correct or Wrong</p>
+                </div>
+            </section>
+
+            <section class="submit_page" id="submit_page">
+                <div>
+                    <h2 id="finish">That's all folks!</h2>
+                    <p id = "final_score">Not bad! Here's how yah did: </p>
+                    <p>Please, enter your initials
+                        <input id="initial">
+                        <button class="button" id="submit_btn">Submit</button>
+                    </p>
+                </div>
+            </section>
+
+            <section class="highscore_page" id ="highscore_page">
+                <div>
+                    <h2>High Scores</h2>
+                    <div id="score_record"><p>Your record</p></div><br><br>
+                    <div>
+                        <button class="button" id="back_btn">Go back</button>
+                        <button class="button" id="clear_btn">Clear Highscores</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>This cool quiz was created by Jarrett Jennings for the University of Miami's Coding Bootcamp!</p>
+    </footer>
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
