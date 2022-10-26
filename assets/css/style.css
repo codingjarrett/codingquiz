@@ -1,0 +1,152 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, Arial, serif;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url("https://wave.video/blog/wp-content/uploads/2019/02/true.gif");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+  }
+
+main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin-left:200px;
+    margin-right:200px;
+}
+footer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.429);
+    width: 100%;
+}
+
+.question_page {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(137, 43, 226, 0.687);
+    text-decoration: wavy;
+    color: azure;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.intro_page {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(137, 43, 226, 0.687);
+    color: azure;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+#intro {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#instruction {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+   }
+
+li {
+    margin-bottom: 10px;
+}
+
+.question_page, #check_line {
+    display:none;
+}
+
+.highscore_page {
+    display:none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(137, 43, 226, 0.687);
+    color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.submit_page {
+    display:none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(137, 43, 226, 0.687);
+    color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+#timer {
+    background-color: blueviolet;
+    color: azure;
+}
+
+.button{
+    background:azure;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+.button:hover{
+  
+    background-color:#c187de;
+  
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+      background-image: url("https://cdn.cultofandroid.com/wp-content/uploads/2015/03/giphy.gif");
+    }
+    main {
+        margin-left:50px;
+        margin-right:50px;
+    }
+  }
+
+@media only screen and (max-width: 520px) {
+    body {
+      background-image: url("https://cdn.cultofandroid.com/wp-content/uploads/2015/03/giphy.gif");
+      font-size: 125%;
+    }
+    main {
+        margin-left:10px;
+        margin-right:10px;
+    }
+}
